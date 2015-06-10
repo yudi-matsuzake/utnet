@@ -12,7 +12,7 @@ Você deve ter instalado o pacote *curl*.
 
 	A configuração pede basicamente a matrícula e a senha para ser possível fazer os próximos logins. Execute o seguinte comando como root:
 ```shell
-# ./configure
+$ sudo ./configure
 matricula: xxxxxx
 senha: xxxxxx
 ```
@@ -22,7 +22,7 @@ senha: xxxxxx
 	Execute o seguinte comando como root:
 
 ```shell
-# ./install
+$ sudo ./install
 ```
 
 ## Funcionamento
