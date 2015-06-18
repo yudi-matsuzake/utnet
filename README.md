@@ -20,7 +20,7 @@ $ sudo yum install curl
 
 Intuitivo, não? c:
 
-Ou você pode ir diretamente ao site do curl clicando [aqui]("http://curl.haxx.se") e para mais informações sobre instalação clique [aqui]("http://curl.haxx.se/docs/install.html").
+Ou você pode ir diretamente ao site do curl clicando [aqui](http://curl.haxx.se) e para mais informações sobre instalação clique [aqui](http://curl.haxx.se/docs/install.html).
 
 ## Instalação
 
