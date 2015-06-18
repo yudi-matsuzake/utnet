@@ -16,4 +16,4 @@ then
 fi
 
 # copia para dpath
-cp ut.sh "$dpath"
+cp -v ut.sh "$dpath"
