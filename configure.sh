@@ -7,16 +7,15 @@ then
 	exit
 fi
 
-while [[ ! "$matricula" =~ a?[0-9]+ ]]
-do
-	read -p "matricula: " matricula
-done
 
+echo -e "OBS.:\vPara alunos, o login tem o formato \"a#####\" onde os #'s é o número da matrícula"
+echo
+
+read -p "login: " matricula
 read -sp "senha: " senha
 
-if [[ ! "$matricula" =~ a.* ]]
-then
-	matricula="a$matricula"
-fi
-
 echo "$matricula:$senha" > /root/.utnet
+
+echo
+echo -
+echo "Pronto, o login e a senha foram salvos. Você pode executar o configure.sh novamente, caso você tenha errado."

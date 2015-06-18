@@ -6,14 +6,30 @@ Script simples para conectar automaticamente na rede da UTFPR
 
 Você deve ter instalado o pacote *curl*.
 
+### Instalação via apt-get do curl
+
+```shell
+# apt-get install curl
+```
+
+### Instalação via yum
+   
+```shell
+# yum install curl 
+```
+
+Intuitivo, não? c:
+
+Ou você pode ir diretamente ao site do curl clicando [aqui]("http://curl.haxx.se") e para mais informações sobre instalação clique [aqui]("http://curl.haxx.se/docs/install.html").
+
 ## Instalação
 
 1. Configuração
 
-	A configuração pede basicamente a matrícula e a senha para ser possível fazer os próximos logins. Execute o seguinte comando como root:
+	A configuração pede basicamente a matrícula e a senha para ser possível fazer os próximos logins. Se voce for aluno, deve colocar o "a" e entao a matricula, ex: "a#####". Execute o seguinte comando como root:
 ```shell
-$ sudo ./configure
-matricula: xxxxxx
+$ sudo ./configure.sh
+login: xxxxxx
 senha: xxxxxx
 ```
 
@@ -22,12 +38,12 @@ senha: xxxxxx
 	Execute o seguinte comando como root:
 
 ```shell
-$ sudo ./install
+$ sudo ./install.sh
 ```
 
 ## Funcionamento
 
-* O script basicamente é basicamente um comando curl onde é fornecido o usuário e a senha para o access point;
+* O script basicamente é basicamente um comando curl onde é fornecido o usuário e a senha para o access point. No arquivo utfpr.web contém toda a suposta "mágica" o comando curl com o método enviado pelo Firefox.;
 
 * Ele é disparado sempre que a rede muda de estado, e envia o método http apenas se estiver conectado com o SSID UTFPRWEB"
 
