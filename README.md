@@ -9,13 +9,13 @@ Você deve ter instalado o pacote *curl*.
 ### Instalação via apt-get do curl
 
 ```shell
-# apt-get install curl
+$ apt-get install curl
 ```
 
 ### Instalação via yum
    
 ```shell
-# yum install curl 
+$ yum install curl 
 ```
 
 Intuitivo, não? c:
