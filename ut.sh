@@ -55,4 +55,4 @@ then
 	fi
 fi
 
-echo "pronto"
+echo_log "pronto"
