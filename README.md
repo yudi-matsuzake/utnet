@@ -35,10 +35,17 @@ senha: xxxxxx
 
 2. Instalação
 
-	Execute o seguinte comando como root:
+	Execute o seguinte comando:
 
 ```shell
 $ sudo ./install.sh
+```
+
+3. Desinstalação
+	Execute o seguinte comando:
+```shell
+$ sudo ./uninstall
+
 ```
 
 ## Funcionamento

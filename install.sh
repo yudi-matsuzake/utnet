@@ -14,6 +14,7 @@ if [ ! -e "$dpath" ]
 then
 	echo "Pasta $dpath não existe, não sei o que fazer, desculpe. :("
 	echo "Voce pode informar sua distribuiçao ou como um bug em github.com/yudi-matsuzake/utnet"
+	exit
 fi
 
 # copia para dpath
