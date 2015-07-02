@@ -13,7 +13,6 @@ dpath="/etc/NetworkManager/dispatcher.d/"
 if [ ! -e "$dpath/ut.sh" ]
 then
 	echo "Você não tem ut.sh na pasta $dpath"
-	exit
 else
 	# remove ut.sh
 	rm -v "$dpath/ut.sh"
