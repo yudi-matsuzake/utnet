@@ -24,7 +24,7 @@ Ou você pode ir diretamente ao site do curl clicando [aqui](http://curl.haxx.se
 
 ## Instalação
 
-1. Configuração
+* Configuração
 
 	A configuração pede basicamente a matrícula e a senha para ser possível fazer os próximos logins. Se voce for aluno, deve colocar o "a" e entao a matricula, ex: "a#####". Execute o seguinte comando como root:
 
@@ -34,7 +34,7 @@ login: xxxxxx
 senha: xxxxxx
 ```
 
-2. Instalação
+* Instalação
 
 	Execute o seguinte comando:
 
@@ -42,7 +42,7 @@ senha: xxxxxx
 $ sudo ./install.sh
 ```
 
-3. Desinstalação
+* Desinstalação
 
 	Execute o seguinte comando:
 
