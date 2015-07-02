@@ -23,6 +23,10 @@ echo_log(){
 #Carrega os ids da rede
 get_ids(){
 	ids="`iwgetid`"
+	
+	#o comando iwgetid retornou alguma coisa? Se não saia!
+	[ ! "$ids" ] && { echo "Tem certeza que você está em um rede sem fio?" ; exit ; }
+	echo_log "IDS: $ids"
 	interface="`echo $ids | awk '{ print $1 }'`"
 	ssid=$(echo $ids | awk '{ print $2 }' | grep -Po '(?<=ESSID:\").*?(?=\")')
 
@@ -37,6 +41,7 @@ p="${user_pass#$u:}"
 echo_log "senha resgatada do usuario $u"
 
 #carrega as ids
+echo_log "carregando as ids"
 get_ids
 
 echo_log "Novo evento na rede ( $1 | $2 )"
@@ -51,7 +56,9 @@ then
 	then
 		echo_log "Método http com o curl..."
 		curl -k 'https://1.1.1.1/login.html' -H 'Host: 1.1.1.1' -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Firefox/31.0 Iceweasel/31.7.0' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8' -H 'Accept-Language: pt-br,en-us;q=0.7,en;q=0.3' -H 'Accept-Encoding: gzip, deflate' -H 'DNT: 1' -H "Referer: https://1.1.1.1/fs/customwebauth/login.html?switch_url=https://1.1.1.1/login.html&ap_mac=$ac_mac&wlan=UTFPRWEB&statusCode=1" -H 'Connection: keep-alive' --data "buttonClicked=4&redirect_url=&err_flag=0&username=$u&password=$p" > /tmp/utnet.log.d/curl.out.html
-
+	else
+		echo_log "Não é UTFPRWEB: $ssid"
+		echo "ERRO: Você está na UTFPRWEB? SSID capturado: $ssid"
 	fi
 fi
 

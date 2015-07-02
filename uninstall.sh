@@ -7,7 +7,8 @@ then
 	exit
 fi
 
-dpath="/etc/NetworkManager/dispatcher.d/"
+# REMOVENDO O SCRIPT AUTOMÁTICO
+dpath="/etc/NetworkManager/dispatcher.d"
 
 #dpath existe?
 if [ ! -e "$dpath/ut.sh" ]
@@ -18,6 +19,7 @@ else
 	rm -v "$dpath/ut.sh"
 fi
 
+# REMOVENDO A CONFIGURAÇÃO
 spath=/root/.utnet
 
 if [ ! -e "$spath" ]
@@ -25,6 +27,16 @@ then
 	echo "Você não tem .utnet na pasta $spath"
 else
 	rm -v "$spath"
+fi
+
+# REMOVENDO O ATALHO
+apath="/usr/bin/utnet"
+
+if [ ! -e "$apath" ]
+then
+	echo "Você não tem o atalho $apath instalado"
+else
+	rm -v "$apath"
 fi
 
 echo "pronto"

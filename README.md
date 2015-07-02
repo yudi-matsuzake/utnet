@@ -50,6 +50,16 @@ $ sudo ./uninstall
 
 ```
 
+	OBS.: na hora de desinstalar, se você tiver uma versão mais antiga do utnet você pode se deparar com umas mensagens de arquivos não encontrados. Não ligue pra elas.
+
+## Sem ser automático
+
+Você pode também, executar o comando manualmente, através digitando o seguinte no terminal:
+
+```shell
+$ sudo utnet
+```
+
 ## Funcionamento
 
 * O script basicamente é basicamente um comando curl onde é fornecido o usuário e a senha para o access point. No arquivo utfpr.web contém toda a suposta "mágica" o comando curl com o método enviado pelo Firefox.;
