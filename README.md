@@ -27,6 +27,7 @@ Ou você pode ir diretamente ao site do curl clicando [aqui](http://curl.haxx.se
 1. Configuração
 
 	A configuração pede basicamente a matrícula e a senha para ser possível fazer os próximos logins. Se voce for aluno, deve colocar o "a" e entao a matricula, ex: "a#####". Execute o seguinte comando como root:
+
 ```shell
 $ sudo ./configure.sh
 login: xxxxxx
@@ -50,7 +51,7 @@ $ sudo ./uninstall
 
 ```
 
-	OBS.: na hora de desinstalar, se você tiver uma versão mais antiga do utnet você pode se deparar com umas mensagens de arquivos não encontrados. Não ligue pra elas.
+*OBS.: na hora de desinstalar, se você tiver uma versão mais antiga do utnet você pode se deparar com umas mensagens de arquivos não encontrados. Não ligue pra elas.*
 
 ## Sem ser automático
 
