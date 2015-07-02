@@ -63,7 +63,7 @@ $ sudo utnet
 
 ## Funcionamento
 
-* O script basicamente é basicamente um comando curl onde é fornecido o usuário e a senha para o access point. No arquivo utfpr.web contém toda a suposta "mágica" o comando curl com o método enviado pelo Firefox.;
+* O script é basicamente um comando curl onde é fornecido o usuário e a senha para o access point. No arquivo utfpr.web contém toda a suposta "mágica" o comando curl com o método enviado pelo Firefox.;
 
 * Ele é disparado sempre que a rede muda de estado, e envia o método http apenas se estiver conectado com o SSID UTFPRWEB"
 
