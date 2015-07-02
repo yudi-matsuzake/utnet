@@ -42,7 +42,9 @@ $ sudo ./install.sh
 ```
 
 3. Desinstalação
+
 	Execute o seguinte comando:
+
 ```shell
 $ sudo ./uninstall
 
